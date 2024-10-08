@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ServeRestSuite">
+    <test name="Login">
+        <classes>
+            <class name="br.com.rest.tests.login.PostLoginTest"/>
+        </classes>
+    </test>
+    <test name="Users">
+        <classes>
+            <class name="br.com.rest.tests.users.PostUsersTest"/>
+            <class name="br.com.rest.tests.users.GetUsersTest"/>
+            <class name="br.com.rest.tests.users.PutUsersTest"/>
+            <class name="br.com.rest.tests.users.DeleteUsersTest"/>
+        </classes>
+    </test>
+    <test name="Products">
+        <classes>
+            <class name="br.com.rest.tests.products.PostProductsTest"/>
+            <class name="br.com.rest.tests.products.GetProductsTest"/>
+            <class name="br.com.rest.tests.products.PutProductsTest"/>
+            <class name="br.com.rest.tests.products.DeleteProductsTest"/>
+        </classes>
+    </test>
+    <test name="Cart">
+        <classes>
+            <class name="br.com.rest.tests.cart.PostCartTest"/>
+            <class name="br.com.rest.tests.cart.GetCartTest"/>
+            <class name="br.com.rest.tests.cart.DeleteCartTest"/>
+        </classes>
+    </test>
+</suite>
